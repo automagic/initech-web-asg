@@ -19,6 +19,7 @@ public class WebserverStack : Stack
       var tags = new Dictionary<string, string> {
          { "Project", projectName },
          { "Stack", stackName},
+         { "Environment", config.Get("environment") ?? "" },
       };
 
       var awsProvider = new Provider("aws-provider", new ProviderArgs {
