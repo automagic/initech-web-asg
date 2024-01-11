@@ -20,7 +20,7 @@ public class WebserverStack : Stack
          { "Project", projectName },
          { "Stack", stackName},
          { "Environment", config.Get("environment") ?? "" },
-         { "Foo", "Baz" },
+         { "Foo", "Bar" },
       };
 
       var awsProvider = new Provider("aws-provider", new ProviderArgs {
